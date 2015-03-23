@@ -1,0 +1,30 @@
+<html>
+<script>
+function myFunction()
+{
+var quant_score = localStorage.getItem("quant_score");
+	if(document.getElementById("option4").checked)
+		quant_score=parseInt(quant_score)+1;
+	localStorage.removeItem("quant_score");
+	localStorage.setItem("quant_score", quant_score);
+  }
+  </script>
+ 
+	<body>
+		<header><h1><p align="center">Question 2</p></h1></header>
+		</br>
+		</br>
+		<h3>Select the cosine theorem formula :</h3>
+		<form action="question3.html" method="get">
+			<input type="radio" name="ques2" id="option1" value=""><math><mi>cos</mi><mo>(</mo><mi>&#945;</mi><mo>&#xB1;</mo><mi>&#946;</mi><mo>)</mo><mo>=</mo><mi>cos&#945; cos&#946;</mi><mo>&#xB1;</mo><mi>sin&#945; sin&#946;</mi></math> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			<input type="radio" name="ques2" id="option2" value=""><math><mi>sin</mi><mo>(</mo><mi>&#945;</mi><mo>&#xB1;</mo><mi>&#946;</mi><mo>)</mo><mo>=</mo><mi>sin&#945; cos&#946;</mi><mo>&#xB1;</mo><mi>cos&#945; sin&#946;</mi></math></br>
+			<input type="radio" name="ques2" id="option3" value=""><math><mi>sin&#945;</mi><mo>+</mo><mi>sin&#946;</mi><mo>=</mo><mi>2sin</mi><mo>(</mo><mfrac><mrow><mi>&#945;</mi><mo>+</mo><mi>&#946;</mi></mrow><mrow>2</mrow></mfrac><mo>)</mo><mo>+</mo><mi> cos</mi><mo>(</mo><mfrac><mrow><mi>&#945;</mi><mo>-</mo><mi>&#946;</mi></mrow><mrow>2</mrow></mfrac><mo>)</mo></math> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			<input type="radio" name="ques2" id="option4" value=""><math><mi>sin&#945;</mi><mo>-</mo><mi>sin&#946;</mi><mo>=</mo><mi>2cos</mi><mo>(</mo><mfrac><mrow><mi>&#945;</mi><mo>+</mo><mi>&#946;</mi></mrow><mrow>2</mrow></mfrac><mo>)</mo><mo>+</mo><mi> sin</mi><mo>(</mo><mfrac><mrow><mi>&#945;</mi><mo>-</mo><mi>&#946;</mi></mrow><mrow>2</mrow></mfrac><mo>)</mo></math></br></br>
+			<input type="submit" value="Submit and Next Question" onclick="myFunction()">
+			<input type="reset" value="Cancel and Clear Sselection">
+		</form>
+	</body>
+
+</html>
+
+

@@ -1,0 +1,35 @@
+<html>
+<script>
+
+function myFunction()
+{
+	var quant_score=0;
+	if(document.getElementById("option4").checked)
+		quant_score=1;
+	localStorage.setItem("quant_score", quant_score);
+}
+</script>
+	<body>
+		<header> <h1><p align="center">Question 1</p></h1> </header>
+		</br>
+		</br>
+		<div style="float:left; width:50%;">
+		<h3>Given points (x1,y1) and (x2,y2), select the formula to find the equation of the given line?</h3>
+		
+		<form name ="ques2" action="question2.html" method= "get" >
+			<!--<input type="hidden" id="quant_scoreHidden"> -->
+			<input type="radio" name="ques1" id="option1" value="1" ><math><mi>y</mi><mo>=</mo><mi>mx</mi><mo>+</mo><mi>b</mi></math>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			<input type="radio" name="ques1" id="option2" value="2" ><math><msup><mi>(x-h)</mi><mn>2</mn></msup> <mo>+</mo><msup><mi>(y-k)</mi><mn>2</mn></msup><mo> = </mo><msup><mi>r</mi><mn>2</mn></msup></math></br>
+			<input type="radio" name="ques1" id="option3" value="3" ><math><mi>y</mi><mo>-</mo><mi>y1</mi><mo>=</mo><mi>m</mi><mo>(</mo><mi>x</mi><mo>-</mo><mi>x1</mi><mo>)</mo></mi></math> &nbsp
+			<input type="radio" name="ques1" id="option4" value="4" ><math><mi>y</mi><mo>-</mo><mi>y2</mi><mo>=</mo><mfrac><mrow><mi>y2</mi><mo>-</mo><mi>y1</mi></mrow><mrow><mi>x2</mi><mo>-</mo><mi>x1</m</mrow></mfrac><mo>(</mo><mi>x</mi><mo>-</mo><mi>x2</mi><mo>)</mo></math></br></br>
+			<input type="submit" value="Submit and Next Question" onclick="myFunction()">
+			<input type="reset" value="Cancel and Clear Selection">
+			
+		</form>
+		</div>
+		<div style="float:right; width:50%; ">
+		<div align="left"><img src="question1.png"></div></br></br>
+		</div>
+	</body>
+
+</html>

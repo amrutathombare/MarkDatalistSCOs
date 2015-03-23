@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<script>
+			function myFunction()
+			{
+				var reading_score =0;
+				if(document.getElementById("option1").checked && document.getElementById("option6").checked)
+					reading_score=1;
+				localStorage.setItem("reading_score", reading_score);
+	
+			}
+			function myFunction1()
+			{
+					
+				if(document.getElementById("option1").checked)
+					document.getElementById("blank1").innerHTML = document.getElementById("option1").value;
+				else if (document.getElementById("option2").checked)
+					document.getElementById("blank1").innerHTML = document.getElementById("option2").value;
+				else if (document.getElementById("option3").checked)
+					document.getElementById("blank1").innerHTML = document.getElementById("option3").value;
+				if(document.getElementById("option4").checked)
+					document.getElementById("blank2").innerHTML = document.getElementById("option4").value;
+				else if (document.getElementById("option5").checked)
+					document.getElementById("blank2").innerHTML = document.getElementById("option5").value;
+				else if (document.getElementById("option6").checked)
+					document.getElementById("blank2").innerHTML = document.getElementById("option6").value;
+			}
+		</script>
+	</head>
+	<body>
+		<header><h1><p align="center">Question 3</p></h1></header>
+		</br>
+		</br>
+		<h3>As per the latest twitter news, complete the article snippet given by selecting appropriate choices for the blanks :</h3></br>
+		<p>Twitter wants more cash. The company announced two "<mark id ="blank1">$_______</mark>" million debt offerings in a filing today, each with a potential $100 increase provided that the sales are oversubscribed. Assuming full tip, including the $100 million boosters, "<mark id="blank2">$________</mark>" will raise up to $1.5 billion with the two offerings.</p>
+		<form action="question4.html" name="question3">
+			
+			<input type="radio" name="Mark1" id="option1" value="$650" onclick="myFunction1()">Option1 Mark1 : $650 <input type="radio" name="Mark2" id="option4" value="Twitter" onclick="myFunction1()">Option1 Mark2 : Twitter</br>
+			<input type="radio" name="Mark1" id="option2" value="$550" onclick="myFunction1()">Option2 Mark1 : $550 <input type="radio" name="Mark2" id="option5" value="Google" onclick="myFunction1()">Option2 Mark2 : Google</br>
+			<input type="radio" name="Mark1" id="option3" value="$450" onclick="myFunction1()">Option3 Mark1 : $450 <input type="radio" name="Mark2" id="option6" value="Facebook" onclick="myFunction1()">Option3 Mark2 : Facebook</br></br>
+			
+			<input type="submit" value="Submit and Next Question"onclick="myFunction()">
+			<input type="reset" value="Cancel and Clear Selection">
+		</form>
+	</body>
+
+</html>
+
+
